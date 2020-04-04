@@ -3,9 +3,9 @@
     <v-layout row>
       <v-flex xs12 sm12 offset-sm0>
         <v-card>        
-          <v-toolbar color="cyan">            
+          <v-toolbar color="cyan darken-4">            
             <v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon>          
-              <div v-resize-text>
+              <div class="title" v-resize-text>
                 <router-link tag="v-toolbar-title" to="/find"> 中小企業向け コロナウイルス対策掲示板
                 </router-link>
               </div>
@@ -101,8 +101,13 @@
 </script>
 
 <style>
+.title{
+  margin: 15px;
+  font-size: 1.0rem!important;
+  color: #fff;
+}
 .v-toolbar-title{
-  font-size: 1.3rem!important;
+  font-size: 1.0rem!important;
   margin-left: 5px!important;
 }
 a.router-link-exact-active {
