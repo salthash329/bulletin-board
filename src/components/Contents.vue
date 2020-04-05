@@ -29,7 +29,7 @@
     </template>
   </v-data-table>
 
-  <router-link tag="v-btn" to="/form">詳細</router-link>
+  <router-link tag="v-btn" to="/">詳細</router-link>
 
 </div>
 

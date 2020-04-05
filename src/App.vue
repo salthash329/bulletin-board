@@ -3,9 +3,9 @@
     <v-app>
        <Header/>
       <router-view/>
-      <v-content>
+      <!-- <v-content>
         <Index/>
-      </v-content>
+      </v-content> -->
       <!-- <AddContents/> -->
       <Footer />
     </v-app>
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Index from './components/Index';
+// import Index from './components/Index';
 import Header from './components/Header';
 import Footer from './components/Footer';
 // import AddContents from './components/atoms/AddContents';
@@ -22,7 +22,7 @@ export default {
   name: 'App',  
 
   components: {
-    Index,
+    // Index,
     Header,
     Footer,
     // AddContents
