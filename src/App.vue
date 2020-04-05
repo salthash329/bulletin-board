@@ -2,7 +2,7 @@
   <div id="app">  
     <v-app>
        <Header/>
-
+      <router-view/>
       <v-content>
         <Index/>
       </v-content>
