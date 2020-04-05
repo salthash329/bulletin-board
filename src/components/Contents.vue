@@ -24,10 +24,12 @@
           <td class="text-xs-right">{{ props.item.note}}</td>                                                
           <td class="text-xs-right">{{ props.item.reservationTime | formatDateLL() }}</td>                                                                             -->
           <td class="text-xs-right">               
-            <router-link tag="v-btn" :to="{ name: 'Index', params: { itemid: props.item.reservationId }}">詳細</router-link>
+            <router-link tag="v-btn" :to="{ name: 'form', params: { itemid: props.item.reservationId }}">詳細</router-link>
           </td>                                                                            
     </template>
   </v-data-table>
+
+  <router-link tag="v-btn" to="/form">詳細</router-link>
 
 </div>
 

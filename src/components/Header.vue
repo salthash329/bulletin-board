@@ -6,12 +6,12 @@
           <v-toolbar color="cyan darken-4">            
             <v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon>          
               <div class="title" v-resize-text>
-                <router-link tag="v-toolbar-title" to="/find"> 中小企業向け コロナウイルス対策掲示板
+                <router-link tag="v-toolbar-title" to="/form"> 中小企業向け コロナウイルス対策掲示板
                 </router-link>
               </div>
             <v-spacer></v-spacer>                    
-              <button v-if="loginStatus" @click.prevent="signOut" class="v-tab">ログアウト</button>
-              <router-link v-else v-resize-text tag="v-tab" to="/login">ログイン</router-link>
+              <!-- <button v-if="loginStatus" @click.prevent="signOut" class="v-tab">ログアウト</button> -->
+              <!-- <router-link v-else v-resize-text tag="v-tab" to="/login">ログイン</router-link> -->
           </v-toolbar>
         </v-card>
         
@@ -25,7 +25,7 @@
         temporary
       >
  
-        <v-list class="pa-1" v-if="userInfo">
+        <!-- <v-list class="pa-1" v-if="userInfo">
           <v-list-tile avatar>          
             <v-list-tile-avatar v-show="headerPreviewImageSrc">
               <img :src="headerPreviewImageSrc">
@@ -38,20 +38,20 @@
               <v-list-tile-title v-text="headerUserName"></v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
-        </v-list>
+        </v-list> -->
 
         <v-list class="pt-0" dense>
           <v-divider></v-divider>
 
         <!-- 過去の利用履歴 -->
-          <v-list-tile v-if="loginStatus">       
+          <!-- <v-list-tile v-if="loginStatus">       
             <v-list-tile-action>
               <v-icon>{{ icon1 }}</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>        
               <router-link tag="v-list-tile-title" :to="`${url1}`">{{ title1 }}</router-link>
             </v-list-tile-content>
-          </v-list-tile>  
+          </v-list-tile>   -->
 
         <!-- 利用ガイド -->
           <v-list-tile>       
@@ -64,14 +64,14 @@
           </v-list-tile>  
 
         <!-- アカウント設定 -->
-          <v-list-tile v-if="loginStatus">       
+          <!-- <v-list-tile v-if="loginStatus">       
             <v-list-tile-action>
               <v-icon>{{ icon3 }}</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>        
               <router-link tag="v-list-tile-title" :to="`${url3}`">{{ title3 }}</router-link>
             </v-list-tile-content>
-          </v-list-tile>    
+          </v-list-tile>     -->
         </v-list>
       </v-navigation-drawer>
 

@@ -13,6 +13,7 @@
         class="cyan darken-4 text-center"
       >
         <v-card-text>
+    
           <v-btn
             v-for="icon in icons"
             :key="icon"
@@ -21,6 +22,7 @@
           >
             <v-icon size="24px">{{ icon }}</v-icon>
           </v-btn>
+        
         </v-card-text>
 
         <v-divider></v-divider>
@@ -30,13 +32,44 @@
         </v-card-text>
       </v-card>
 
-          <v-btn
+  <!-- <router-link tag="v-btn" 
+              :to="{ name: 'Pageform', 
+                query: { room_id:
+                  props.item.roomId, 
+                  day: props.item.day, 
+                  from_time: props.item.fromTime, 
+                  to_time: props.item.toTime, 
+                  room_name: props.item.roomName,
+                  fromDay: fromDay,
+                  toDay: toDay,
+                  roomId: roomId,
+                  page: pagination.page,
+                  number: number }}">
+            予約申請</router-link> -->
+      <!-- <router-link tag="v-btn"
+          :to="{ name: 'Form'}" > 
+      </router-link> -->
+           <!-- <router-link  to="/forget">パスワードをお忘れの場合</router-link> -->
+         <!-- <router-link
+          to="/"
+          tag="v-btn"
               absolute
               dark
               fab
               top
               right
-              color="pink"
+              color="blue"                        
+         > 
+         <v-icon>mdi-plus</v-icon>
+          </router-link>          -->
+          <v-btn
+              to="/form"
+              absolute
+              dark
+              fab
+              top
+              right
+              color="pink"              
             >
               <v-icon>mdi-plus</v-icon>
             </v-btn>  
