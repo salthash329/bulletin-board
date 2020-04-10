@@ -3,7 +3,7 @@
     <v-layout row>
       <v-flex xs12 sm12 offset-sm0>
         <v-card>        
-          <v-toolbar color="cyan darken-4">            
+          <v-toolbar color="blue lighten-1">            
             <v-toolbar-side-icon @click="drawer = !drawer"></v-toolbar-side-icon>          
               <div class="title" v-resize-text>
                 <router-link tag="v-toolbar-title" to="/form"> 中小企業向け コロナウイルス対策掲示板

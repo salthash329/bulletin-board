@@ -10,7 +10,7 @@
         flat
         tile
         width="100%"
-        class="cyan darken-4 text-center"
+        class="blue lighten-1 text-center"
       >
         <v-card-text>
     
