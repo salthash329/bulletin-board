@@ -17,5 +17,10 @@ export default new Router({
       name: 'Form',
       component: () => import('./components/Form.vue')
     },
+    {
+      path: '/detail/:itemId',
+      name: 'Detail',
+      component: () => import('./components/Detail.vue')
+    },
   ]
 })

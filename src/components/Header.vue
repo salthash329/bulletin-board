@@ -25,7 +25,7 @@
         temporary
       >
  
-        <!-- <v-list class="pa-1" v-if="userInfo">
+        <v-list class="pa-1" v-if="userInfo">
           <v-list-tile avatar>          
             <v-list-tile-avatar v-show="headerPreviewImageSrc">
               <img :src="headerPreviewImageSrc">
@@ -38,7 +38,7 @@
               <v-list-tile-title v-text="headerUserName"></v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
-        </v-list> -->
+        </v-list>
 
         <v-list class="pt-0" dense>
           <v-divider></v-divider>

@@ -1,5 +1,5 @@
 <template>
-
+<div footer>
   <!-- <v-container fluid> -->
   <v-card>
     <v-footer
@@ -88,6 +88,7 @@
     </v-row>        
   </v-card>
 <!-- </v-container>   -->
+</div>
 </template>
 
 <script>
